@@ -1,0 +1,252 @@
+
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="center">
+
+    <mat-tab label="Escritura">        
+        <!-----------------------Etiquetas de Swiper para banners------------------------>
+        <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+                <img src="https://img.freepik.com/foto-gratis/utiles-escolares-clases-arte_144627-32132.jpg?t=st=1718999645~exp=1719003245~hmac=8930fb9431b0e40cacac94a6a433b1b8e7fabeb80ef12177e153a137f72fc901&w=740" alt="">
+            </swiper-slide>
+             <swiper-slide>
+                <img src="https://img.freepik.com/vector-gratis/fondo-plano-rebajas-regreso-escuela_52683-68416.jpg?t=st=1718999657~exp=1719003257~hmac=6524907de567ba256285088b8654fbf0bb9bf7ec6739b525da512a4206f59833&w=740" alt="">
+            </swiper-slide>
+             <swiper-slide>
+                <img src="https://img.freepik.com/vector-gratis/fondo-regreso-escuela-dibujado-mano_23-2149022527.jpg?t=st=1718999672~exp=1719003272~hmac=096d9274c56b06b6ac2829f4639eadb9d1aa3de6f028aaa2a09ecfe13828d257&w=740" alt="">
+            </swiper-slide>           
+        </swiper-container>
+  <!-----------------------Etiquetas de Swiper para banners------------------------>
+
+
+
+
+ <!----------------------------------------Div con la directiva cdk-scroll-data----------------------------------------->
+        <div class="example-button-row container cdk-virtual-scroll-data-source-example ">
+
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport cdk-scrollable">
+
+                <button mat-flat-button (click)="coleccion = 'lamy'">Lamy</button>
+                <button mat-flat-button (click)="coleccion = 'parker'">Parker</button>
+                <button mat-flat-button (click)="coleccion = 'pillot'">Pillot</button>
+                <button mat-flat-button (click)="coleccion = 'inoxcrom'">Inoxcrom</button>
+                <button mat-flat-button (click)="coleccion = 'zebra'">Zebra</button>
+                <button mat-flat-button (click)="coleccion = 'otras-marcas'">Otras Marcas</button>
+
+            </cdk-virtual-scroll-viewport>
+
+
+        </div>
+
+
+
+        <mat-divider></mat-divider>
+
+
+        @switch (coleccion) {
+
+        @case ("lamy") {
+        Hola Lamy
+        }
+
+        @case ("parker") {
+        Hola Parker
+        }
+
+        @case ("Pillot") {
+        Hola Pillot
+        }
+
+        @case ("zebra") {
+        Hola Zebras
+        }
+
+        @case ("inoxcrom") {
+        Hola Inoxcrom
+        }
+
+        @case ("otras-marcas") {
+        Hola Otras Marcas
+        }
+
+        @default {
+        Hola defecto
+        }
+        }
+
+    </mat-tab>
+
+    <mat-tab label="Agendas">
+
+        <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+                <img src="https://img.freepik.com/psd-gratis/maqueta-cuadernos-elemento-negro-sobre-fondo-negro_24972-1167.jpg?t=st=1719000423~exp=1719004023~hmac=2a8927ec685eb3b1f3f3d6ede271b9c264a98a9e4f6f7cee2273f5c5350117e8&w=740" alt="">
+            </swiper-slide>
+   
+          
+            
+        </swiper-container>
+
+        <div class="example-button-row container cdk-virtual-scroll-data-source-example ">
+
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport cdk-scrollable">
+                <button mat-flat-button (click)="coleccion = 'disonex'">Disponex</button>
+                <button mat-flat-button (click)="coleccion = 'limar'">Limar</button>
+
+            </cdk-virtual-scroll-viewport>
+
+
+        </div>
+
+        <mat-divider></mat-divider>
+
+
+        @switch (coleccion) {
+
+        @case ("disonex") {
+        Hola Disonex
+        }
+
+        @case ("limar") {
+        Hola Limar
+        }
+
+
+        @default {
+        Hola Limar
+        }
+        }
+
+    </mat-tab>
+
+    <mat-tab label="Tecnologia">
+
+        <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+                <img src="https://img.freepik.com/foto-gratis/laptop-papel-blanco-auriculares_23-2148036930.jpg?t=st=1719000501~exp=1719004101~hmac=6abb3ecee7fb97e0c90f5a0c2b7612e8560b6d77f04c88fe084db7529626a306&w=740" alt="">
+            </swiper-slide>
+
+          
+            
+        </swiper-container>
+
+
+        <div class="example-button-row container cdk-virtual-scroll-data-source-example ">
+
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport cdk-scrollable">
+                <button mat-flat-button (click)="coleccion = 'computadores'">Computadores</button>
+                <button mat-flat-button (click)="coleccion = 'tintas-y-toners'">Tintas y Toners</button>
+                <button mat-flat-button (click)="coleccion = 'accesorios'">Accesorios</button>
+
+            </cdk-virtual-scroll-viewport>
+
+
+        </div>
+
+        <mat-divider></mat-divider>
+
+
+        @switch (coleccion) {
+
+        @case ("computadores") {
+        Hola Computadores
+        }
+
+        @case ("tintas-y-toners") {
+        Hola Tintas y Toners
+        }
+
+        @case ("accesorios") {
+        Hola Accesorios
+        }
+
+
+        @default {
+        Hola Computadores
+        }
+        }
+
+    </mat-tab>
+
+    <mat-tab label="Oficina">
+
+        <swiper-container class="mySwiper" pagination="true">
+            <swiper-slide>
+                <img src="https://img.freepik.com/foto-gratis/arreglo-cuaderno-escritorio_23-2148745776.jpg?t=st=1719000107~exp=1719003707~hmac=b3c83a3c12bb747b9849da14ea0f17826d696a6bad2f057966f4b31b69c2d214&w=740" alt="">
+            </swiper-slide>
+    
+            
+        </swiper-container>
+
+        <div class="example-button-row container cdk-virtual-scroll-data-source-example ">
+
+            <cdk-virtual-scroll-viewport orientation="horizontal" itemSize="50" class="example-viewport cdk-scrollable">
+
+                <button mat-flat-button (click)="coleccion = 'resmas'">Resmas de Papel</button>
+                <button mat-flat-button (click)="coleccion = 'papeles'">Papeles</button>
+                <button mat-flat-button (click)="coleccion = 'archivo'">Archivo</button>
+                <button mat-flat-button (click)="coleccion = 'equipos'">Equipos de Oficina</button>
+                <button mat-flat-button (click)="coleccion = 'formas'">Formas Comerciales</button>
+                <button mat-flat-button (click)="coleccion = 'accesorios'">Accesorios</button>
+                <button mat-flat-button (click)="coleccion = 'boligrafos-economicos'">Bolígrafos Economicos</button>
+                <button mat-flat-button (click)="coleccion = 'pegantes'">Pegantes y Cintas Adhesivas</button>
+                <button mat-flat-button (click)="coleccion = 'papeles'">Papeles y Bolsas de Regalo</button>
+
+            </cdk-virtual-scroll-viewport>
+
+
+        </div>
+
+        <mat-divider></mat-divider>
+
+
+        @switch (coleccion) {
+
+        @case ("resmas") {
+        Hola Resmas de Papel
+        }
+
+        @case ("papeles") {
+        Hola Papeles
+        }
+
+        @case ("archivo") {
+        Hola Archivo
+        }
+
+        @case ("equipos") {
+        Hola Equipos
+        }
+
+        @case ("formas") {
+        Hola Formas Comerciales
+        }
+
+        @case ("accesorios") {
+        Hola Accesorios
+        }
+
+        @case ("boligrafos-economicos") {
+        Hola Boligrafos economicos
+        }
+
+        @case ("pegantes") {
+        Hola Pegantes
+        }
+
+        @case ("pepeles") {
+        Hola Papeles
+        }
+
+
+        @default {
+        Hola Computadores
+        }
+        }
+
+    </mat-tab>
+
+
+</mat-tab-group>
+
+
+<br><br><br><br><br><br><br>
+<app-footer></app-footer>
