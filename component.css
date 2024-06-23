@@ -1,0 +1,165 @@
+/* Remove unnecessary rule */
+
+
+/* Style headings semantically */
+h4 {
+  margin-left: 8px; /* Adjust margin if needed */
+}
+
+/* Keep flexbox container styles */
+.example-flex-container {
+  display: flex;
+  text-align: center; /* Can be removed for media query control */
+}
+
+
+
+/* Keep Material Design component styles */
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+
+
+
+/* Keep generic container styles (consider a more descriptive class name) */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px; /* Consider using media queries to adjust on smaller screens */
+}
+
+
+
+
+
+/* Keep virtual scroll styles */
+.cdk-virtual-scroll-data-source-example .example-viewport {
+  height: 60px;
+  width: 100%;
+}
+
+.cdk-virtual-scroll-data-source-example .example-viewport .cdk-virtual-scroll-content-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+
+
+
+
+
+/* Estilos de la barra de scroll */
+body ::-webkit-scrollbar {
+  height: 3px;
+  width: 100vh;
+}
+body ::-webkit-scrollbar-thumb {
+  color: transparent;
+  background: #003cff;
+  border-radius: 5px;
+}
+body ::-webkit-scrollbar-thumb:hover {
+  background: #b4b2b2;
+}
+/* Estilos de la barra de scroll */
+
+
+
+
+
+
+
+
+
+/* Keep scrollable content styles */
+.cdk-scrollable {
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+}
+
+.cdk-scrollable button {
+  flex: 0 0 auto;
+  margin: 0 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.contenedor-galeria {
+  position: relative; /* Permite posicionar los elementos absolutamente dentro */
+  width: 800px; /* Ancho de la galería */
+  height: 200px; /* Altura de la galería */
+  overflow: hidden; /* Oculta los elementos que se extiendan fuera de la galería */
+}
+
+.banner {
+  position: absolute; /* Posiciona los banners absolutamente dentro del contenedor */
+  top: 0; /* Posiciona el banner en la parte superior */
+  left: 0; /* Posiciona el banner en la izquierda */
+  width: 100%; /* Ancho del banner */
+  height: 60%; /* Altura del banner */
+  opacity: 0; /* Oculta los banners inicialmente */
+  transition: opacity 1s ease-in-out; /* Transición de opacidad para el cambio de página */
+
+}
+
+.banner-activo {
+  opacity: 1; /* Muestra el banner activo */
+  z-index: 1; /* Posiciona el banner activo en el frente */
+
+}
+
+img {
+  width: 100%; /* Ancho de la imagen */
+  max-height: 350px; /* Altura de la imagen */
+  object-fit: cover; /* Ajusta la imagen a la caja, manteniendo la proporción */
+}
+
+.controles {
+  position: absolute; /* Posiciona los controles absolutamente dentro del contenedor */
+  bottom: 20px; /* Posiciona los controles en la parte inferior */
+  left: 50%; /* Posiciona los controles en el centro horizontal */
+  transform: translateX(-50%); /* Compensa la posición del centro */
+}
+
+.controles button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border: none;
+  cursor: pointer;
+}
+
+.controles button:hover {
+  background-color: #aaa;
+}
+
+.cuadro {
+  padding: 30px;
+  border-radius: 30px;
+}
+
+swiper-container {
+  width: 100%;
+}
+
+img {
+  border-radius: 0px;
+}
